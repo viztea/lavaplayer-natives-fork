@@ -41,7 +41,7 @@ task load {
             }
         }
 
-        if (!file("$projectDir/fdk-aac/libAACdec").exists()) {
+        if (!file("$projectDir/fdk-aac/fdk-aac-${fdkAacVersion}/libAACdec").exists()) {
             def downloadPath = "$buildDir/tmp/fdk-aac-v${fdkAacVersion}.tar.gz"
             def unpackPath = "$projectDir/fdk-aac"
             download.run {
